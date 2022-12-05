@@ -1,0 +1,14 @@
+var my_bucket_list = ['nonton konser', 'traveling', 'beli sepatu'];
+document.querySelector("#all").textContent = my_bucket_list;
+my_bucket_list.push("beli tas");
+console.log(my_bucket_list);
+document.querySelector("#push").textContent = my_bucket_list;
+my_bucket_list.unshift("beli rumah");
+console.log(my_bucket_list);
+document.querySelector("#unshift").textContent = my_bucket_list;
+my_bucket_list.pop();
+console.log(my_bucket_list);
+document.querySelector("#pop").textContent = my_bucket_list;
+my_bucket_list.shift();
+console.log(my_bucket_list);
+document.querySelector("#shift").textContent = my_bucket_list;

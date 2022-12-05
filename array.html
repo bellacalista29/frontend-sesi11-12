@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var binatang = ["singa", "harimau", "kuda"];
+        console.log(binatang[0]);
+
+        //menambahkan index array
+        binatang.push("ayam");
+        console.log(binatang);
+
+        //menghapus data yang baru dipush
+        binatang.pop();
+        console.log(binatang);
+
+        //menambahkan di index pertama
+        binatang.unshift("sapi");
+        console.log(binatang);
+
+        //menghapus data yang baru dishift
+        binatang.shift();
+        console.log(binatang);
+
+        //menjadikan satu string dengan koma
+        console.log(binatang.join());
+
+        //mengurutkan berdasarkan alphabet
+        console.log(binatang.sort());
+
+        //mengambil data dari index ke berapa(1) - index 1 tdk termasuk, dan sebelum index ke berapa(3)
+        console.log(binatang.slice(1,3));
+
+        //menghapus dan menambahkan splice(indexmulai, jumlahygdihapus, ygditambahkan)
+        binatang.splice(1,1,"kerbau");
+        console.log(binatang);
+
+        var kalimat = "bootcamp cimb niaga";
+        var kata = kalimat.split(" ");
+
+        kata.splice(1,0,"bank");
+
+        console.log(kata.join(" "));
+
+
+    </script>
+</body>
+</html>
